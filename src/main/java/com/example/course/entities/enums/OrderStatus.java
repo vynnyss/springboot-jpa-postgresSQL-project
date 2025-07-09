@@ -2,7 +2,7 @@ package com.example.course.entities.enums;
 
 public enum OrderStatus {
 	
-	WAITING_PAAYMENT(1),
+	WAITING_PAYMENT(1),
 	PAID(2),
 	SHIPPED(3),
 	DELIVERED(4),
