@@ -37,7 +37,12 @@ public class UserService {
 	
 	public void delete(Long id) {
 		try {
-		repository.deleteById(id);
+			if(repository.existsById(id)) {
+				repository.deleteById(id);
+			} else {
+				throw new ResourceNotFoundException(id);
+			}
+		
 		} catch(DataIntegrityViolationException e) {
 			throw new DatabaseException(e.getMessage());
 		}
