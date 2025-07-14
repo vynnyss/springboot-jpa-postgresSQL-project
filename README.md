@@ -58,6 +58,7 @@ Exemplo de endpoints disponíveis:
 
 🔁 Exemplo de Requisição (Postman)
 Criar novo usuário
+
 {
   "name": "João da Silva",
   "email": "joao@email.com",
